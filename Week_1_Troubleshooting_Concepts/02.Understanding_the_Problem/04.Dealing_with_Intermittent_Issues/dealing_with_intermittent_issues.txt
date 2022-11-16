@@ -1,0 +1,7 @@
+Depending on what the problem is, you might want to look at different sources of information,
+- the load on the computer, 
+- the processes running at the same time, 
+- the usage of the network
+and so on...
+
+This is an especially annoying type of intermittent issue, nicknamed Heisenbug, in honor of Werner Heisenberg. He's the scientist that first described the observer effect, where just observing a phenomenon alters the phenomenon.

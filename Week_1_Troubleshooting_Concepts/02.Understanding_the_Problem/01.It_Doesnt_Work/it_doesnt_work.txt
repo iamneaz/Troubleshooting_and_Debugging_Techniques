@@ -1,0 +1,6 @@
+1. What were they trying to do?
+2. What steps did they follow?
+3. What was the expected result?
+4. What did they get instead? 
+
+The load average on Linux shows how much time a processor is busy in a given minute, with one meaning it was busy for the whole minute. So normally this number shouldn't be above the amount of processors in the computer. A number higher than the amount of processors means the computer is overloaded. 

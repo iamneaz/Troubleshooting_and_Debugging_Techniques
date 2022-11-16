@@ -1,0 +1,11 @@
+ * Understanding the root cause is essential for performing the long-term remediation.
+ * Whenever possible, we should check our hypothesis in a test environment, instead of the production environment that our users are working with. 
+
+  How do we find the root cause? 
+  - One possible culprit could be too much disk input and output. To get more info on this, we could use iotop, which is a tool similar to top that lets us see which processes are using the most input and output. 
+  - Other related tools are iostat and vmstat, these tools show statistics on the input/output operations and the virtual memory operations. 
+  - If the issue is that the process generates too much input or output, we could use a command like ionice to make our backup system reduce its priority to access the disk and let the web services use it too. What if the input and output is not the issue? 
+  - Another option would be that the service is using too much network because it's transmitting the data to be backed up to a central server and that transmission blocks everything else. We can check this using iftop, yet another tool similar to top that shows the current traffic on the network interfaces. 
+  - If the backup is eating all the network bandwidth, we could look at the documentation for the backup software and check if it already includes an option to limit the bandwidth. The rsync command, which is often used for backing up data, includes a -bwlimit, just for this purpose. 
+  - If that option isn't available, we can use a program like Trickle to limit the bandwidth being used. But what if the network isn't the issue either? Remember, we need to put our debugging creativity to work, and come up with other possible reasons for why it's failing. 
+  - Another option could be that the compression algorithms selected is too aggressive, and compressing the backups is using all of the server's processing power. We could solve this by reducing the compression level or using the nice command to reduce the priority of the process and accessing the CPU.
