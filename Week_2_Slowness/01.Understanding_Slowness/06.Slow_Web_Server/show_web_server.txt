@@ -1,0 +1,17 @@
+The process priorities in Linux are so that the lower the number, the higher the priority. Typical numbers go from 0 to 19. By default, processes start with a priority of zero. But we can change that using the nice and renice commands.
+
+pidof command receives the process name and returns all the process IDs that have that name.
+
+for pid in $(pidof ffmpeg); do renice 19 $pid; done
+
+ps ax shows us all the running processes on the computer, and we'll connect the output of the command to less, to be able to scroll through it.
+
+locate command to locate a files directory . 
+locate static/001.webm
+
+running one ffmpeg process at a time.
+for pid in $(pidof ffmpeg); 
+    do while kill -CONT $pid;
+        do sleep 1;
+        done; 
+    done

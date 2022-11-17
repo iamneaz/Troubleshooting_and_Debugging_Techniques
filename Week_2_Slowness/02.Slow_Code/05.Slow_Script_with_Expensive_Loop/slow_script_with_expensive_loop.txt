@@ -1,0 +1,16 @@
+time <script>
+
+ prints how long it took to execute it. There's three different values. 
+ -Real, 
+ -user, 
+ -sys. 
+ Real is the amount of actual time that it took to execute the command. This value is sometimes called wall-clock time because it's how much time a clock hanging on the wall would measure no matter what the computer's doing.
+
+ User is the time spent doing operations in the user space.
+
+ Sys is the time spent doing system level operations
+
+ There's a bunch of different profilers available for Python that work for different use cases. Here, we'll use the one called pprofile 3. We use the dash f flag to tell it to use the call grind file format and the dash o flag to tell it to store the output in the profile dot out file. This generated a file that we can open with any tool that supports the call grand format. We're going to use kcachegrind to look at the contents, which is a graphical interface for looking into these files.
+ pprofile3 -f callgrind -o profile.out ./send_reminders.py "2020-01013|Example|test1,test2,test3,test4,test5,test6,test7,test8,test9"
+
+ use kcachegrind to look at the contents, which is a graphical interface for looking into these files.

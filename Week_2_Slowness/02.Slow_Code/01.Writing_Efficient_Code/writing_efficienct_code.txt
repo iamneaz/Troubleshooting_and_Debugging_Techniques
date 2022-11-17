@@ -1,0 +1,13 @@
+if we want our code to finish faster, we need to make our computer do less work
+ and to do this, we'll have to avoid doing work that isn't really needed. How? There's a bunch of different things to do. The most common ones include 
+ -- storing data that was already calculated to avoid calculating it again 
+ -- using the right data structures for the problem 
+ -- reorganizing the code so that the computer can stay busy while waiting for information from slow sources like disk or over the network.
+
+
+ To know what sources of slowness we need to address, we have to figure out where our code is spending most of its time. There's a bunch of tools that can help us with that called profilers. 
+ *A profiler is a tool that measures the resources that our code is using, giving us a better understanding of what's going on.*
+ In particular, they help us see how the memory is allocated and how the time spent. Because of how profilers work, they are specific to each programming language. 
+
+ gprof to analyze a C program but use the c-Profile module to analyze a Python program.
+ The cProfile module is used to count how many times functions are called, and how long they run.
