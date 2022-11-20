@@ -1,0 +1,3 @@
+Valgrid - A very powerful tool that can tell us if the code si doing any invalid operations, no matter if it crashes or not
+Valgrid is available in linux and macos
+Dr Memory is a similar tool like valgrid which can be used in both windows and linux

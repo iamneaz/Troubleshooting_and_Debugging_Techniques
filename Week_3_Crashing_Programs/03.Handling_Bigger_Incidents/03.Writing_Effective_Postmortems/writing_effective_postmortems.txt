@@ -1,0 +1,9 @@
+Postmortems are documents that describe details of incidence to help us learn from our mistakes.
+ When writing a postmortem, the goal isn't to blame whoever caused the incident, but to learn from what happened to prevent the same issue from happening again. To do this, we usually document 
+ - what happened, 
+ - why it happened, 
+ - how it was diagnosed, 
+ - how it was fixed, 
+ and finally figure out what we can do to avoid the same event happening in the future.
+
+ The exact structure might vary depending on preference and the type of incident that you're dealing with. In general, you'll want to include the details of what caused the issue, what the impact of the issue was, how it got diagnosed, the short-term remediation you applied, and the long-term remediation you recommend. If the document is long and you're going to share it with a lot of people, you want to include a summary that highlights the root cause, the impact, and what needs to be done to prevent the issue from happening again. It's useful to include what went well in postmortems too. When working on a problem, we might realize that it would have been much worse if we didn't have certain tools or systems available. 

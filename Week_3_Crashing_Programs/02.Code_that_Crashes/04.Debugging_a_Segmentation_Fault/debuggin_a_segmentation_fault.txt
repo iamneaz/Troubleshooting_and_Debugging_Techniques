@@ -1,0 +1,8 @@
+Core files :
+Store all the information related to the crash so that we or someone else can debug what's going on
+
+We need to tell the OS that we want to generate those core files. We do that by running the ulimit command, then using the -c flat for core files, and then saying unlimited to state that we want core files of any size. Once we've done that, we can try executing our example again.
+
+This file contains all the information of what was going on with the program when it crashed. We can use it to understand why the program crashed by passing it to the GDB debugger. We'll call it gdb-c core to give it a core file and then example to tell it where the executable that crashed is located.
+
+The backtrace command can be used to show a summary of the function calls that were used to the point where the failure occurs.   

@@ -1,0 +1,1 @@
+For a Python, program we can use the pdb interactive debugger which lets us do all the typical debugging actions like executing lines of code one-by-one or looking at how the variables change values

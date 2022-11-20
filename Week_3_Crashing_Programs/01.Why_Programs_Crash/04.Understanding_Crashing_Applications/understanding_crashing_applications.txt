@@ -1,0 +1,6 @@
+tools to know what is going on inside the program :
+linux - strace 
+macos - dtruss
+windows - process monitor
+
+ to find the root cause of a crashing application will want to look at all available logs figure out what changed trace the system or library calls the program makes and create the smallest possible reproduction case.
