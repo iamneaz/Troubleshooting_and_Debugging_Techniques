@@ -1,0 +1,4 @@
+Memory Leak - A chunk of memory that's no longer needed is not released
+Garbage collector - In charge of freeing the memory that's no longer in use
+memory profiler - to figure out how the memory is being used.
+for profiling in C and C++ ==> Valgrind

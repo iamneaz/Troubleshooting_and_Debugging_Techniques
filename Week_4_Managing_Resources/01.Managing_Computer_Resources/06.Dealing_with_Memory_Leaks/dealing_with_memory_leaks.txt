@@ -1,0 +1,3 @@
+Scroll buffer - Feature that lets us scroll up and see the things that we exevuted and their output
+
+Decorator - used in Python to add extra behavior to functions without having to modify the code

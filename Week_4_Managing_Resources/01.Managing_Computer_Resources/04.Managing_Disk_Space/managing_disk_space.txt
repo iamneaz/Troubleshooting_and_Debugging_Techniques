@@ -1,0 +1,5 @@
+programs may need disk space for lots of different reasons.
+- Installed binaries and libraries
+- Data stored by the applications
+- Cached information
+- Logs, temporary files or even backups
